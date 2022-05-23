@@ -36,7 +36,7 @@ function slickShelf() {
         adaptiveHeight: true,
         responsive: [
             {
-                breakpoint: 1366,
+                breakpoint: 1367,
                 settings: {
                   slidesToShow: 4,
                   slidesToScroll: 1,
