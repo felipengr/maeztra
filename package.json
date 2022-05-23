@@ -1,0 +1,13 @@
+{
+  "name": "maeztra",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch style.scss:style.css"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "node-scss": "^7.0.3"
+  }
+}
