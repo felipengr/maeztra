@@ -776,6 +776,109 @@ body {
             }
         }
     }
+
+    .modal-container-mobile {
+        width:100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,.5);
+        z-index: 9999;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+            display: flex !important;
+        }
+        
+
+        .content {
+            background-color: #fff;
+            width: 298px;
+            height: 307px;
+            position: relative;
+            bottom: 60px;
+
+            .content-text {
+                display: flex;
+                flex-direction: column;
+                float: right;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                height: 298px;
+                width: 307px;
+                color: #353535;
+
+                figure {
+                    figcaption {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 20px;
+                        margin-top: 5px;
+                    }
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 23px;
+                    margin-top: 14px;
+                    color: #787D83;
+                }
+
+                input {
+                    margin-top: 24px;
+                    background-color: #fff;
+                    width: 258px;
+                    height: 40px;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 10px;
+                    padding-left: 8px;
+
+                    &::placeholder {
+                        font-size: 12px;
+                        color: #787D83;
+                        line-height: 20px;
+                    }
+                }
+
+                button {
+                    margin-top: 12px;
+                    width: 258px;
+                    height: 40px;
+                    background-color: #faa500;
+                    color: #fff;
+                    border-radius: 10px;
+                    border: none;
+                    font-size: 12px;
+                    line-height: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    background-image: url('../img/enviar.png');
+                    background-repeat: no-repeat;
+                    background-position: 188px 14px;
+                    cursor: pointer;
+                }
+            }
+
+            .close {
+                color: white;
+                position: absolute;
+                font-family: 'Lato', sans-serif;
+                width: 47px;
+                cursor: pointer;
+                font-size: 12px;
+                line-height: 20px;
+                top: -20px;
+                right: 5px;
+                background-color: transparent;
+                border: none;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
